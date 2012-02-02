@@ -1,0 +1,169 @@
+\documentclass{resume}
+\usepackage{latexsym}
+
+\renewcommand{\categoryfont}{\sc}
+
+%
+% set the space used for category titles here:
+% use the same value for oddsidemargin and marginparwidth [the latter 
+% 		will be reset to account for marginparsep]
+% 
+\setlength{\oddsidemargin}{1in}
+\setlength{\marginparwidth}{1in}
+% 
+% calculate other dimensions [textwidth and evensidemargin] 
+% in function of oddsidemargin and marginparwidth: 
+% would be nicer to put in the class file...
+%
+\addtolength{\marginparwidth}{-\marginparsep}
+\setlength{\evensidemargin}{\oddsidemargin}
+\setlength{\textwidth}{\paperwidth}
+\addtolength{\textwidth}{-2in}
+\addtolength{\textwidth}{-2\oddsidemargin}
+\addtolength{\textwidth}{\marginparwidth}
+\addtolength{\textwidth}{\marginparsep}
+
+%
+\setlength{\topmargin}{0in}
+%
+%
+\renewcommand{\labelcitem}{$\diamond$}
+\renewcommand{\labelitemi}{$\cdot$}
+\newcommand{\first}{$1^{\mbox{\scriptsize st}}$\ }
+\newcommand{\second}{$2^{\mbox{\scriptsize nd}}$\ }
+\newcommand{\third}{$3^{\mbox{\scriptsize rd}}$\ }
+
+\author{Leonardo Sandoval}
+
+% ------ Address --------------------------------------------------------
+
+\address{}
+        {Abetos 544, Los Pinos\\
+         Zapopan, Jalisco, M\'exico \\
+         home   (+52) 33 38 13 06 65\\
+         mobile (+52) 33 12 57 90 39\\
+         \mbox{\small\tt leonardo\_gdl@yahoo.com.mx}}
+
+\def\udg{University of Guadalajara}
+\def\tub{\udg}
+\def\inaoe{Instituto Nacional de Astrof\'{\i}sica, \'Optica y Electr\'onica}
+\def\itesm{Tecnol\'ogico de Monterrey campus Monterrey}
+\def\facty{Faculty of Computer Science}
+
+\begin{document}
+\maketitle
+
+% ------- Education ---------------------------------------------------
+
+\begin{category}{Education}
+\citem{\inaoe}\\
+MS in Computer Science. Thesis defended in January 2005.
+
+
+\citem{\udg}\\
+Diploma in Computer Science, August 1998.
+\citem{Scholarships}
+\begin{itemize}
+\item Mexican-French Scientific Agreement (ANUIES-ECOS). January -- December 2003.
+\item Mexican Science Sponsor (CONACYT). January 2001 -- December 2002.
+\end{itemize}
+\end{category}
+
+% -------- Work experience --------------------------------------------
+
+\begin{category}{Work \\experience}
+
+\citem{Ooyala}
+June 2011 -- present
+Member of the \textit{Client Service Group}.
+I am part of the CSG group which develop custom solutions to Ooyala clients. So far, I have participated in the development of
+two important tools: 1) a tool to import large video content to Ooyala servers 2) SDK modules which allows clients to manage its videos
+programatically. Last two months, a prototype Web portal was developed which allow users to purchase video content on-line. 
+
+\citem{Texas Instruments}\\
+Contractor: Dextra Technologies\\
+August 2006 -- June 2011
+\begin{itemize}
+\item \textbf{Embedded Software Engineer} (August 2007 -- June 2011).\\
+\textit{GStreamer} Texas Instruments group.\\
+Our group creates and maintains GStreamer plugins for the OMAP family processors. Plugins are based on Texas-Instruments OpenMAX IL multimedia interface,
+which in turn abstracts coding/decoding algorithms. I am focused mainly on video plugins and camera.\\
+\item \textbf{Embedded Software Engineer} (August 2006 -- August 2007)\\
+\textit{OpenMAX} Texas Instruments group.\\
+Software developer for the OpenMAX IL Camera component for OMAP 2 family processors. Work mostly done on-site (Dallas, Texas, USA).\\
+\end{itemize}
+
+\citem\itesm\\
+Part time, August 2006 -- January 2011
+\begin{itemize}
+\item \textbf{Web programmer} (August 2009 -- January 2011).\\
+Full design and implementation of an Second factor authentication system using request's user agent. A complete functional prototype has been built.
+\item \textbf{Web programmer} (August 2007 -- July 2008).\\	
+Full design and implementation of a classification method for detecting intruders using keystrokes typing rhythm. 
+\item \textbf{Research Assistant} (August 2006 -- December 2006).\\
+An open-source statistical translation software called \textbf{Moses} was used to create a translation system	between a native language (Nahuatl) and Spanish.\\
+\\
+\end{itemize}
+\end{category}
+
+\newpage
+
+\begin{category}{Research \\experience}
+\citem{\inaoe}\\
+\begin{itemize}
+\item \textbf{Master thesis in Computer Astrophysics} (January 2001 -- December 2004).\\
+Comparison between decay times of satellite galaxies using $n$-body numerical simulations and a two-body motion equation with dynamical friction. Several galaxy density profiles were compared. \\
+Thesis partially done in Marseille, France.\\
+Advisors:  Ivanio Puerari (INAOE, Mexico) and Lia Athanassoula (Observatoire de Marseille, France).\\
+\item \textbf{Scientific Programmer} (August -- December 2000).\\
+Comparison between two classification methods (\textsl{k}-nn and neural networks) using stellar spectra.\\
+Advisor: Olac Fuentes \\
+\\
+\end{itemize}
+\end{category}
+
+% -------- Publication --------------------------------------------
+
+\begin{category}{Talks}
+
+\citembullet Extending Ruby with C Language. \\
+University of Leiden, The Netherlands, June 2009. \\
+%This talk was part of the Astrophysical Multipurpose Software Environment (AMUSE) first %workshop.
+
+\citembullet Simulation of Decay Times of Satellite Galaxies using Semi-Analytical methods.\\
+Proceedings of The National Convention of Astronomy 2003.\\
+Instituto de Astronom\'{\i}a, UNAM. \\
+Authors: Leonardo Sandoval, Lia Athanassoula and Jorge Villa
+\end{category}
+
+% ------- Skills ------------------------------------------------------
+\\
+\begin{category}{Skills}
+\citembullet Programming languages: C, C++, Ruby, Python, PHP, Javascript, Java and Haskell
+\citembullet Web frameworks: Ruby on Rails
+\citembullet Content Management Systems: Drupal
+\citembullet Databases: MySQL and  sqlite
+\citembullet Operating systems: Mac OS X, Ubuntu and most Microsoft Windows family
+\citembullet Version controllers: Git and IBM ClearCase
+\end{category}
+\\
+\begin{category}{Languages}
+\citembullet Native Spanish
+\citembullet Fluent spoken/written English
+\citembullet Fair \textbf{German}. ZDaF (Zertifikat Deutsch als Fremdsprache) obtained in Goethe-Institut, Guadalajara, Jalisco, Mexico (1996-1998)
+\end{category}
+\\
+
+% ----- Hobbies ------------------------
+\begin{category}{Hobbies}
+\citembullet Mountain hiking
+\citembullet Traveling
+\citembullet Tennis
+\end{category}
+% -------- Reference --------------------------------------------
+\\
+\begin{category}{Reference} 
+\citemnobullet Available on request.
+\end{category}
+
+\end{document}

@@ -1,2 +1,3 @@
-latex lsg.tex
-dvipdf lsg.dvi
+To create a pdf file, just source the create.sh script
+
+

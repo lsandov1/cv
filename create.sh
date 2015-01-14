@@ -1,4 +1,4 @@
 #!/bin/bash
 
-file=CV_LeonardoSandoval
+file=english
 latex $file.tex && dvipdf $file.dvi

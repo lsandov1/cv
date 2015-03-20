@@ -1,0 +1,186 @@
+\documentclass{resume}
+\usepackage{latexsym}
+\usepackage{url}
+
+\renewcommand{\categoryfont}{\sc}
+
+%
+% set the space used for category titles here:
+% use the same value for oddsidemargin and marginparwidth [the latter 
+% 		will be reset to account for marginparsep]
+% 
+\setlength{\oddsidemargin}{1in}
+\setlength{\marginparwidth}{1in}
+% 
+% calculate other dimensions [textwidth and evensidemargin] 
+% in function of oddsidemargin and marginparwidth: 
+% would be nicer to put in the class file...
+%
+\addtolength{\marginparwidth}{-\marginparsep}
+\setlength{\evensidemargin}{\oddsidemargin}
+\setlength{\textwidth}{\paperwidth}
+\addtolength{\textwidth}{-2in}
+\addtolength{\textwidth}{-2\oddsidemargin}
+\addtolength{\textwidth}{\marginparwidth}
+\addtolength{\textwidth}{\marginparsep}
+
+%
+\setlength{\topmargin}{0in}
+%
+%
+\renewcommand{\labelcitem}{$\diamond$}
+\renewcommand{\labelitemi}{$\cdot$}
+\newcommand{\first}{$1^{\mbox{\scriptsize st}}$\ }
+\newcommand{\second}{$2^{\mbox{\scriptsize nd}}$\ }
+\newcommand{\third}{$3^{\mbox{\scriptsize rd}}$\ }
+
+\author{Leonardo Sandoval}
+
+% ------ Address --------------------------------------------------------
+
+\address{}
+        {Ciudad Quer\'etaro 211, Colonia M\'exico\\
+         Zapopan, Jalisco, M\'exico \\
+         casa    (+52) 33 38 13 05 63\\
+         celular (+52) 33 12 67 90 39\\
+         \mbox{\small\tt leo.san.gon@gmail.com}}
+
+\def\udg{Universidad de Guadalajara}
+\def\tub{\udg}
+\def\inaoe{Instituto Nacional de Astrof\'{\i}sica, \'Optica y Electr\'onica}
+\def\itesm{Tecnol\'ogico de Monterrey campus Monterrey}
+\def\faculty{Facultad de Ciencias Computacionales}
+\def\imx{\texttt{i.MX}}
+
+\begin{document}
+\maketitle
+
+% ------- Education ---------------------------------------------------
+
+\begin{category}{Educaci\'on}
+\citem{\inaoe}\\
+Maestr\'{i}a en Ciencias Computacionales. Tesis defendida en Enero 2005.
+
+\citem{\udg}\\
+\faculty\\
+Ingenier\'{i}a en Ciencias Computacionales, Agosto 1998.
+
+\citem{Becas}
+\begin{itemize}
+\item Convenio cient\'{i}fico Mexicano-Frances (ANUIES-ECOS). Enero -- Diciembre 2003.
+\item CONACYT. Enero 2001 -- Diciembre 2002.
+\end{itemize}
+\end{category}
+
+% -------- Work experience --------------------------------------------
+
+\begin{category}{Experiencia Laboral}
+
+
+\citem{Freescale Semiconductor}\\
+Julio 2012 -- Presente
+\begin{itemize}
+\item \textbf{Consultor de Servicios Profesionales} (Abril 2014 -- Presente)\\
+1. Desarrollo de Software Base (BSP) para nuevas tarjetas de clientes basadas en procesadores multimedia de la familia \imx. 2. Dise\~no y desarrollo de aplicaciones a nivel de usuario, enfocadas principalmente a actividades multimedia.
+\end{itemize}
+
+\begin{itemize}
+\item \textbf{Ingeniero de Aplicaci\'on de Campo} (Julio 2012 -- Abril 2014)\\
+Apoyo directo a clientes ubicados en la zona central de Estados Unidos usando procesadores multimedia \imx\ bajo la plataforma Linux y Android. El proposito de un ingeniero de campo es servir como intermediario entre el cliente y la empresa, facilitando el desarrollo de su
+producto y su r\'apido lanzamiento al mercado.
+\end{itemize}
+
+\citem{Ooyala}\\
+Junio 2011 -- Julio 2012
+\begin{itemize}
+\item \textbf{Ingeniero de Software}\\
+Miembro del equipo de Servicios Profesionales, desarrollando diversas soluciones, tanto internas como a clientes.
+Una de las principales tareas asignadas fue la creaci\'on de un sitema de migraci\'on de contenido de video a los
+servidores de Ooyala. Esto implic\'o la creaci\'on de un SDK (\textit{Software Development Kit} en ingles) que posibilit\'o
+el manejo de archivos de video a trav\'es de un lenguaje de programaci\'on. Los lenguajes utilizados fueron Ruby, Python y Java.
+\end{itemize}
+
+\citem{Texas Instruments - Dextra Technologies}\\
+Agosto 2006 -- Junio 2011
+\begin{itemize}
+\item \textbf{Ingeniero de Software Embebidos} (Agosto 2007 -- Junio 2011).\\
+Creaci\'on y mantenimiento de \textit{plugins} de \texttt{GStreamer} (sistema de multimedia para sistemas operativos Linux) para la familia de procesadores OMAP. Estos se basan en la interf\'az de multimedia \texttt{OpenMAX}, que a su vez es la encargada de llamar directamente a los drivers de multimedia. Mi tarea estuvo enfocada en los codificadores/decodificadores de formatos de video.
+\item \textbf{Ingeniero de Software Embebido} (Agosto 2006 -- Agosto 2007)\\
+Desarrollo de Software para la interfaz \texttt{OpenMAX} en la familia de procesadores \texttt{OMAP2}. La mayor parte del tiempo labor\'e en la ciudad de Dallas, Texas.
+\end{itemize}
+\end{category}
+
+
+\begin{category}{Experiencia \\acad\'emica}
+
+\citem\itesm\\
+\begin{itemize}
+\item \textbf{Software Embebido} (Agosto 2014 -- Noviembre 2014).\\
+La materia \textbf{Software Embebido} fue impartida en la la Maestr\'{i}a en Electr\'onica. Temas cubiertos: Cargadores (bootloaders), Kernel de Linux, 
+aceleradores de HW (video, imagen and graficos) y el proyecto Yocto, este \'ultimo sirve para la creaci\'on de distribuciones Linux.
+\end{itemize}
+\end{category}
+
+
+\begin{category}{Experiencia \\en la investigaci\'on}
+
+\citem\itesm\\
+\begin{itemize}
+\item \textbf{Programador Web} (Medio Tiempo, Agosto 2009 -- Enero 2011).\\
+Dise\~no e implementaci\'on de un sistema de autenticaci\'on usando la cadena (\textit{user-agent}) enviada por un navegador en cada petici\'on. Un prototipo funcional fue liberado al cliente.
+\item \textbf{Programador Web} (Tiempo Completo, Agosto 2007 -- Julio 2008).\\
+Dise\~no e implementaci\'on de un m\'etodo de clasificaci\'on para la detecci\'on de intrusos usando patrones de tecleo del usuario. El algoritmo dise\~nado
+fue documentado y liberado al cliente (Google).
+\end{itemize}
+
+
+\citem{\inaoe}\\
+\begin{itemize}
+\item \textbf{Maestr\'{i}a en Ciencias Computacionales} (Enero 2001 -- Diciembre 2004).\\
+Comparaci\'on de simulaciones num\'ericas y semi-num\'ericas del decaimiento de sat\'elites de galaxias. El m\'etodo semi-anal\'{i}tico consisti\'o en la soluci\'on 
+n\'umerica de la ecuaci\'on diferencial del movimiento de dos cuerpos, en este caso, se le agrego un componente mas de fricci\'on. Varios perfiles de densidad de masa en galaxias fueron comparados.\\
+Tesis parcialmente realizada en Marsella, Francia.\\
+Asesores: Ivanio Puerari (INAOE, M\'exico) y Lia Athanassoula (Observatorio de Marsella, France).\\
+\item \textbf{Programador} (Agosto -- Diciembre 2000).\\
+Comparaci\'on de dos m\'etodos de clasificaci\'on (\textit{k}-nn y redes neuronales) usando espectros estelares como datos.\\
+Asesor: Olac Fuentes \\
+\\
+\end{itemize}
+\end{category}
+
+% -------- Publication --------------------------------------------
+
+\begin{category}{Platicas}
+
+\citembullet Simulaci\'on de Tiempos de Decaimiento de Sat\'elites de Galaxias usando m\'etodos semi-anal\'{i}ticos.\\
+Actas de la Convenci\'on Nacional de Astronom\'{\i}a 2003.\\
+Instituto de Astronom\'{\i}a, UNAM. \\
+Autores: Leonardo Sandoval, Lia Athanassoula y Jorge Villa
+\end{category}
+
+% ------- Skills ------------------------------------------------------
+\begin{category}{Habilidades}
+\citembullet Lenguajes de Programaci\'on: C, Bash
+\citembullet Controladores de versiones: Git
+\citembullet Sistemas de creaci\'on de distribuciones Linux: LTIB, Yocto
+\citembullet Sistemas Operativos: Linux
+\end{category}
+
+\begin{category}{Lenguas}
+\citembullet Espan\~ol nativo
+\citembullet Ingl\'es hablado/escrito fluido
+\citembullet Alem\'an b\'asico. ZDaF (Zertifikat Deutsch als Fremdsprache) obtenido en el instituto Goethe, Guadalajara, Jalisco, Mexico (1996-1998)
+\end{category}
+
+% ----- Hobbies ------------------------
+\begin{category}{Hobbie}
+\citembullet Senderismo
+\citembullet Yoga, Meditaci\'on
+\end{category}
+
+% -------- Reference --------------------------------------------
+\begin{category}{Referencias} 
+\citemnobullet Disponibles si son requeridas.
+\end{category}
+
+\end{document}

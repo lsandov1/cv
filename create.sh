@@ -1,4 +1,4 @@
 #!/bin/bash
 
-file=english
+file=$1
 latex $file.tex && dvipdf $file.dvi

@@ -1,3 +1,5 @@
-To create a pdf file, just source the create.sh script
+To create a pdf file, just source the create.sh with the corresponding cv version script, i.e.
+
+$ ./create.sh english
 
 

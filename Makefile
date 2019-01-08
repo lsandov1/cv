@@ -14,3 +14,5 @@ $(VER).dvi: $(VER).tex
 
 clear:
 	rm -rf *.pdf *.dvi *.out
+
+.PHONY: $(VER).dvi

@@ -1,9 +1,10 @@
 # simple makefile to produce the English cv
 
 VER=english
+NAME=LeonardoSandovalGonzalez
 
 all: $(VER).pdf
-	mv $< CV.pdf
+	mv $< $(NAME).pdf
 
 $(VER).pdf: $(VER).dvi
 	dvipdf $<
@@ -12,7 +13,7 @@ $(VER).pdf: $(VER).dvi
 $(VER).dvi: $(VER).tex
 	latex $<
 
-clear:
+clean:
 	rm -rf *.pdf *.dvi *.out
 
 .PHONY: $(VER).dvi

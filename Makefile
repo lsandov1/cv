@@ -1,7 +1,7 @@
 # simple makefile to produce the English cv
 
-VER=english
-NAME=LeonardoSandovalGonzalez
+VER  := english
+NAME := LeonardoSandovalGonzalez
 
 all: $(VER).pdf
 	mv $< $(NAME).pdf

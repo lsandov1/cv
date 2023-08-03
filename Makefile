@@ -5,6 +5,7 @@ NAME := LeonardoSandovalGonzalez
 
 all: $(VER).pdf
 	mv $< $(NAME).pdf
+	cp $(NAME).pdf ~/Downloads
 
 $(VER).pdf: $(VER).dvi
 	dvipdf $<

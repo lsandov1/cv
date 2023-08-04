@@ -41,7 +41,7 @@
 \newcommand{\second}{$2^{\mbox{\scriptsize nd}}$\ }
 \newcommand{\third}{$3^{\mbox{\scriptsize rd}}$\ }
 
-\author{Leonardo Sandoval}
+\author{Leonardo Sandoval Gonzalez}
 
 % ------ Address --------------------------------------------------------
 
@@ -56,12 +56,15 @@
 \def\udg{University of Guadalajara}
 \def\tub{\udg}
 \def\inaoe{Instituto Nacional de Astrof\'{\i}sica, \'Optica y Electr\'onica}
-\def\itesm{Tecnol\'ogico de Monterrey campus Monterrey}
+\def\itesmmty{Tecnol\'ogico de Monterrey campus Monterrey}
+\def\itesmgdl{Tecnol\'ogico de Monterrey campus Guadalajara}
 \def\facty{Faculty of Computer Science}
 \def\linaro{Linaro Limited}
 \def\intel{Intel Corporation}
-\def\cl{Clear Linux OS}
+\def\cl{ClearLinux}
 \def\fsl{Freescale Semiconductor}
+\def\texasins{Texas Instruments}
+\def\dextra{Dextra Technologies}
 
 \begin{document}
 \maketitle
@@ -69,134 +72,138 @@
 % ------- Education ---------------------------------------------------
 
 \begin{category}{Education}
-\citem{\inaoe}\\
-MS in Computer Science. Thesis defended in January 2005.
 
-\citem{\udg}\\
-Diploma in Computer Science, August 1998.
-\citem{Scholarships}
-\begin{itemize}
-\item Mexican-French Scientific Agreement (ANUIES-ECOS). January -- December 2003.
-\item Mexican Science Sponsor (CONACYT). January 2001 -- December 2002.
-\end{itemize}
+  \citem{\inaoe}\\
+  MS in Computer Science. Thesis defended in January 2005.
+
+  \citem{\udg}\\
+  Diploma in Computer Science, August 1998.
+  \citem{Scholarships}
+  \begin{itemize}
+  \item Mexican-French Scientific Agreement (ANUIES-ECOS). January -- December 2003.
+  \item Mexican Science Sponsor (CONACYT). January 2001 -- December 2002.
+  \end{itemize}
+
 \end{category}
 
 % -------- Work experience --------------------------------------------
 
 \begin{category}{Work \\experience}
 
-\citem{\linaro}\\
-May 2020 -- August 2023
+  \citem{\linaro}\\
+  May 2020 -- August 2023
 
-\begin{itemize}
-\item \textbf{Senior Software Engineer - CodeLinaro} (Apr 23 -- Aug 23)\\
-  Lead the GIT repository migration from \href{git.linaro.org}{Linaro}  into
-  \href{git.codelinaro.org}{CodeLinaro Git}, providing tools and support to multiple internal teams.
-  Together with the repository migration, internal teams started to migrate their CI/CD from
-  \href{ci.linaro.org} into \href{git.codelinaro.org}{Codelinaro CI} where I provided support
-  for all issues encountered.
-\end{itemize}
+  \begin{itemize}
+  \item \textbf{Senior Software Engineer - CodeLinaro} (Apr 23 -- Aug 23)\\
+    Part of the core \href{www.codelinaro.org}{Codelinaro} team, leading the Git and CI/CD repository migration
+    from \href{git.linaro.org}{Linaro Git}/\href{ci.linaro.org}{Linaro Jenkins} to
+    \href{git.codelinaro.org}{CodeLinaro Git}, providing migration tools, documentation and support to internal Developer Services teams.
+  \end{itemize}
 
-\begin{itemize}
-\item \textbf{Senior Software Engineer - Qualcomm Landing} (Jan 22 -- April 23)\\
-  Lead the Qualcomm LT CI Pipeline Migration from \href{https://ci.linaro.org/view/qclt/}{Jenkins} to
-  \href{https://gitlab.com/lt-qcom-gitlab-ci}{Gitlab}, with the ultimate goal of running the full CI
-  under \href{https://www.codelinaro.org/}{CodeLinaro}.
-\end{itemize}
+  \begin{itemize}
+  \item \textbf{Senior Software Engineer - Qualcomm Landing} (Jan 22 -- April 23)\\
+    Part of the Qualcomm Landing Team CI team, leading the CI/CD Migration from \href{https://ci.linaro.org/view/qclt/}{Linaro Qualcomm Jenkins} into
+    \href{https://git.codelinaro.org/linaro/qcomlt/ci/configs}{CodeLinaro CI}, the latter becoming the official CI/CD environment.
+  \end{itemize}
 
-\begin{itemize}
-\item \textbf{Senior Software Engineer - Trusted Firmware} (May 20 -- Jan 22)\\
-  Lead the CI migration of the \href{https://www.trustedfirmware.org/projects/tf-a/}{TF-A}
-  project from an ARM internal Jenkins instance into a public one at \href{https://ci.trustedfirmware.org/}{TF CI}.
-  Lead the CI migration from ARM internal Jenkins instance into a public one at \href{https://github.com/ARMmbed/mbedtls}{Mbed TLS}.
-  All work on the above areas is found at
-  \href{https://review.trustedfirmware.org/q/owner:leonardo.sandoval%2540linaro.org}{patch review page}.
-\end{itemize}
+  \begin{itemize}
+  \item \textbf{Senior Software Engineer - MbedTLS} (Oct 21 -- Jan 22)\\
+    Lead the CI migration from ARM internal Jenkins instance into a public \href{https://github.com/ARMmbed/mbedtls}{Mbed TLS}.
+  \end{itemize}
 
-\citem{\intel}\\
-February 2015 -- May 2020
+  \begin{itemize}
+  \item \textbf{Senior Software Engineer - Trusted Firmware-A} (May 20 -- Jan 22)\\
+    Lead the CI migration of the \href{https://www.trustedfirmware.org/projects/tf-a/}{TF-A}
+    project from an ARM internal Jenkins instance into a public instance \href{https://ci.trustedfirmware.org/}{TF-A CI}.
+    Work found at \href{https://review.trustedfirmware.org/q/owner:leonardo.sandoval%2540linaro.org}{patch review page}.
+  \end{itemize}
 
-\begin{itemize}
-\item \textbf{Integration Architect - Intel Stacks} (Oct 18 -- May 20)\\
-  Member of the \href{https://github.com/intel/stacks}{Software Stacks} team,
-  providing specialized and optimized \href{https://clearlinux.org/}{\cl} Reference Stacks.
-  My role was as an integration architect, providing integration solutions on multiple stacks,
-  leading: \href{https://github.com/intel/stacks/blob/master/dars/dars.rst}{Data Analytic}
-  and \href{https://github.com/intel/stacks/blob/master/mers/README.md}{Media} Rererence Stacks,
-  from design to release.
-\end{itemize}
+  \citem{\intel}\\
+  February 2015 -- May 2020
 
-\begin{itemize}
-\item \textbf{Performance Software Engineer - ClearLinux} (Dec 2017 -- Oct 2018)\\
-  Member of the \href{https://clearlinux.org/}{ClearLinux} Performance Team.
-  Activities included: Performance Package performance Monitoring and Low-level Routine Optimization.
-  For the latter, Leo's contributions focused on the \href{https://www.gnu.org/software/libc/}{GNU C library},
-  adopting the \href{}{AVX2} technology for \textit{strcmp} and \textit{strcpy} string routines.
-  See \href{https://patchwork.ozlabs.org/project/glibc/list/?submitter=74072}{patchwork}
-  for completed work.
-\end{itemize}
+  \begin{itemize}
+  \item \textbf{Integration Architect - Intel Stacks} (Oct 18 -- May 20)\\
+    Member of the \href{https://github.com/intel/stacks}{Software Stacks} team,
+    providing specialized and optimized \href{https://clearlinux.org/}{\cl} Software Reference Stacks.
+    Leading two stacks as integration architect leading:
+    \href{https://github.com/intel/stacks/blob/master/dars/dars.rst}{Data Analytic}
+    and Media, from design to release.
+  \end{itemize}
 
-\begin{itemize}
-\item \textbf{Embedded Software Engineer - Yocto Project} (February 2015 -- December 2017)\\
-  Member of the Core \href{https://www.yoctoproject.org/}{Yocto Project} Team,
-  providing support for several sub-projects:
-  \href{https://lists.openembedded.org/g/bitbake-devel/search?p=recentpostdate%252Fsticky%2C%2C%2C20%2C2%2C0%2C0&q=Leonardo+Sandoval}{bitbake},
-  \href{https://lists.openembedded.org/g/openembedded-core/search?p=recentpostdate%252Fsticky%2C%2C%2C20%2C2%2C0%2C0&q=Leonardo+Sandoval}{OpenEmbedded-Core} and
+  \begin{itemize}
+  \item \textbf{Performance Software Engineer - ClearLinux} (Dec 2017 -- Oct 2018)\\
+    Member of the \href{https://clearlinux.org/}{ClearLinux} Performance Team.
+    Activities included: Performance Package performance Monitoring and Low-level Routine Optimization.
+    For the latter, Leo's contributions focused on the \href{https://www.gnu.org/software/libc/}{GNU C library},
+    adopting the \href{https://patchwork.ozlabs.org/project/glibc/list/?submitter=74072}{AVX2} technology
+    for \textit{strcmp} and \textit{strcpy} string routines.
+  \end{itemize}
+
+  \begin{itemize}
+  \item \textbf{Senior Embedded Software Engineer - Yocto Project} (February 2015 -- December 2017)\\
+    Member of the Core \href{https://www.yoctoproject.org/}{Yocto Project} Team,
+    providing support for several sub-projects:
+    \href{https://lists.openembedded.org/g/bitbake-devel/search?p=recentpostdate%252Fsticky%2C%2C%2C20%2C2%2C0%2C0&q=Leonardo+Sandoval}{bitbake},
+    \href{https://lists.openembedded.org/g/openembedded-core/search?p=recentpostdate%252Fsticky%2C%2C%2C20%2C2%2C0%2C0&q=Leonardo+Sandoval}{OpenEmbedded-Core} and
     \href{https://lists.yoctoproject.org/g/poky/search?p=created%2C0%2C%2C1%2C2%2C0%2C0&q=Leonardo+Sandoval}{Poky}. Initial maintainer of
-      \href{http://git.yoctoproject.org/cgit/cgit.cgi/patchtest/}{Patchtest},
-    a framework and test suite for \href{https://patchwork.openembedded.org/project/oe-core/series/?ordering=-last_updated}{OpenEmbedded Core Patches}.
-\end{itemize}
+    \href{http://git.yoctoproject.org/cgit/cgit.cgi/patchtest/}{Patchtest},
+    a framework and test suite for OpenEmbedded Core Patches.
+  \end{itemize}
 
-\citem{\fsl}\\
-July 2012 -- February 2015
-\begin{itemize}
-\item \textbf{Embedded Software Engineer - Professional Services} (Apr 14 -- Feb 15)\\
-  Board Support Package (BSP) development and support for
-  \href{https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors:IMX_HOME}{i.MX}
-  Multimedia Processors. Direct support to US customers for the entire Software Stack: from bootloader up to the user-space, full Linux
-  stack.
-\end{itemize}
+  \citem{\fsl}\\
+  July 2012 -- February 2015
 
-\begin{itemize}
-\item \textbf{Embedded Software Engineer - Field Application Engineer} (Jul 12 -- Apr 14)\\
-  Customer support for customers located in the USA Central Region and M\'exico using
-  \href{https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors:IMX_HOME}{i.MX}
-  Multimedia Processors, with main focus on issues raised from \href{https://git.yoctoproject.org/cgit/cgit.cgi/meta-fsl-arm}{meta-fsl-arm} BSP meta-layer.
-  Key \href{https://community.nxp.com/t5/user/viewprofilepage/user-id/25586}{member}
-  of the Linux build system migration, supporting community users to transition from \textit{ltib} to the Yocto Project.
-\end{itemize}
+  \begin{itemize}
+  \item \textbf{Embedded Software Engineer - Professional Services} (Apr 14 -- Feb 15)\\
+    Board Support Package (BSP) development and support for
+    \href{https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors:IMX_HOME}{i.MX}
+    Multimedia Processors. Direct support to US customers for the entire Software Stack: from bootloader up to the user-space, full Linux
+    stack.
+  \end{itemize}
 
-\citem{Texas Instruments/Dextra Technologies}\\
-August 2006 -- June 2011
+  \begin{itemize}
+  \item \textbf{Embedded Software Engineer - Field Application Engineer} (Jul 12 -- Apr 14)\\
+    Customer support for customers located in the USA Central Region and M\'exico using
+    \href{https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors:IMX_HOME}{i.MX}
+    Multimedia Processors, with main focus on issues raised from \href{https://git.yoctoproject.org/cgit/cgit.cgi/meta-fsl-arm}{meta-fsl-arm} BSP meta-layer.
+    Key \href{https://community.nxp.com/t5/user/viewprofilepage/user-id/25586}{member}
+    of the Linux build system migration, supporting community users to transition from \textit{ltib} to the Yocto Project.
+  \end{itemize}
 
-\begin{itemize}
-\item \textbf{Embedded Software Engineer - GStreamer} (August 2007 -- June 2011).\\
-  Creating and maintenance of GStreamer plugins for the \texttt{OMAP} family
-  processors. Plugins based on TI \texttt{OpenMAX} IL multimedia interface.
-  Maintainer of the camera and video encoder plugins.
+  \citem{\texasins - \dextra}\\
+  August 2006 -- June 2011
 
-\item \textbf{Embedded Software Engineer  - OpenMAX} (August 2006 -- August 2007)\\
-  Software developer for the \texttt{OpenMAX} IL Camera component for
-  \texttt{OMAP2} family processors.
-\end{itemize}
+  \begin{itemize}
+  \item \textbf{Embedded Software Engineer - GStreamer} (August 2007 -- June 2011).\\
+    Camera and Video Encoder GStreamer plugin maintainer for the \texttt{OMAP} family
+    processors. Plugins based on TI \texttt{OpenMAX} IL multimedia middle-ware layer.
+  \end{itemize}
+
+  \begin{itemize}
+  \item \textbf{Embedded Software Engineer  - OpenMAX} (August 2006 -- August 2007)\\
+    Software developer for the \texttt{OpenMAX} IL Camera component for
+    \texttt{OMAP2} family processors.
+  \end{itemize}
+  
 \end{category}
 
 \begin{category}{Academic \\experience}
 
-\citem\itesm\\
-\begin{itemize}
-\item \textbf{Embedded Linux} (August 2014 -- November 2014).\\
-  A \textit{Embedded Linux} course imparted on the Department of
-  Master of Electronic. Topics covered: cross-toolchain, bootloader,
-  kernel, filesystems and multimedia through HW accelerators using
-  \texttt{i.MX} processors.
-\end{itemize}
+  \citem{\itesmgdl}\\
+  August 2014 -- November 2014
+  \begin{itemize}
+  \item \textbf{Embedded Linux Course} (August 2014 -- November 2014).\\
+    A \textit{Embedded Linux Course} course imparted on the Department of
+    Master of Electronic, covering all SW stack on a embedded Linux device
+  \end{itemize}
+
 \end{category}
 
 \begin{category}{Research \\experience}
 
-  \citem\itesm\\
-  
+  \citem{\itesmmty}\\
+  August 2007 -- January 2011
+
   \begin{itemize}
   \item \textbf{Web programmer - Computer Science Department} (Part time, August 2009 -- January 2011).\\
     Design and implementation of an Second factor authentication system using
@@ -207,8 +214,9 @@ August 2006 -- June 2011
     using keystrokes typing rhythm. The designed algorithm documented and
     delivered successfully to customer (Google).
   \end{itemize}
-
+  
   \citem{\inaoe}\\
+  August 2000 -- December 2004
 
   \begin{itemize}
   \item \textbf{Master thesis in Computer Astrophysics} (January 2001 -- December 2004).\\
@@ -235,27 +243,28 @@ Authors: Leonardo Sandoval, Lia Athanassoula and Jorge Villa
 
 % ------- Skills ------------------------------------------------------
 \begin{category}{Skills}
-\citembullet Programming languages: Python, shell (bash), C, X86 assembler
-\citembullet Version controllers: Git
-\citembullet Linux Building Systems: LTIB, Yocto Project
+  \citembullet Programming languages: Python, Bash, C, X86/ARCH64 assembler
+  \citembullet CI/CD: Jenkins, Gitlab
+  \citembullet Linux Building Systems: Yocto Project, buildroot
+  \citembullet Linux Tools: autotools, cmake, git, awk, sed
 \end{category}
 
 \begin{category}{Languages}
-\citembullet Native Spanish
-\citembullet Fluent spoken/written English
-\citembullet Fair \textbf{German}. ZDaF (Zertifikat Deutsch als Fremdsprache) obtained in Goethe-Institut, Guadalajara, Jalisco, Mexico (1996-1998)
+  \citembullet Native Spanish
+  \citembullet Fluent spoken/written English
+  \citembullet Fair \textbf{German}. ZDaF (Zertifikat Deutsch als Fremdsprache) obtained in Goethe-Institut, Guadalajara, Jalisco, Mexico (1996-1998)
 \end{category}
 
 % ----- Hobbies ------------------------
 \begin{category}{Hobbies}
-\citembullet Mountain climbing, travelling
-\citembullet Tech book reading: x86 architecture, compilers, vectorization, binary analytics
-\citembullet Meditation: Mindfulness, Yoga, Kriya Yoga
+  \citembullet Hiking, traveling, cooking, swimming, running, functional, amateur chess player
+  \citembullet Reading: Technology books (array languages, system performance, low-leve vectorization, parallel programming)
+  \citembullet Meditation: Mindfulness
 \end{category}
 
 % -------- Reference --------------------------------------------
 \begin{category}{Reference} 
-\citemnobullet Available on request.
+  \citemnobullet Available on request.
 \end{category}
 
 \end{document}

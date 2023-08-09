@@ -1,2 +1,0 @@
-apt install texlive-latex-base
-apt install texlive-latex-extra

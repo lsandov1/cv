@@ -20,4 +20,7 @@ $(VER).dvi: $(VER).tex
 clean:
 	rm -rf *.pdf *.dvi *.out
 
+setup:
+	sudo apt install -y texlive-latex-base texlive-latex-extra
+
 .PHONY: $(VER).dvi

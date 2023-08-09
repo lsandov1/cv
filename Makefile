@@ -1,18 +1,21 @@
 # simple makefile to produce the English cv
 
 VER  := english
-NAME := LeonardoSandovalGonzalez
+GIT_REV_PARSE := $(shell git rev-parse --short HEAD)
+NAME := CV-Leonardo-Sandoval-Gonzalez
+FULL_NAME := $(NAME)-$(GIT_REV_PARSE)
 
 all: $(VER).pdf
-	mv $< $(NAME).pdf
-	cp $(NAME).pdf ~/Downloads
+	cp $< $(FULL_NAME).pdf
+	cp $(FULL_NAME).pdf ~/Downloads
 
 $(VER).pdf: $(VER).dvi
 	dvipdf $<
-	dvipdf $<
+	rm -f $(VER).dvi
 
 $(VER).dvi: $(VER).tex
 	latex $<
+	rm -f $(VER).aux $(VER).fls $(VER).log $(VER).out $(VER).tex~ $(VER).fdb_latexmk
 
 clean:
 	rm -rf *.pdf *.dvi *.out
